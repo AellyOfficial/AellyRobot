@@ -7,7 +7,7 @@ from pyrogram.types import (
 )
 
 # By @TroJanzHEX
-from PrimeMega.ex_plugins.ImageEditor.edit_1 import (  # pylint:disable=import-error
+from FallenRobot.ex_plugins.ImageEditor.edit_1 import (  # pylint:disable=import-error
     black_white,
     box_blur,
     bright,
@@ -15,7 +15,7 @@ from PrimeMega.ex_plugins.ImageEditor.edit_1 import (  # pylint:disable=import-e
     mix,
     normal_blur,
 )
-from PrimeMega.ex_plugins.ImageEditor.edit_2 import (  # pylint:disable=import-error
+from FallenRobot.ex_plugins.ImageEditor.edit_2 import (  # pylint:disable=import-error
     cartoon,
     circle_with_bg,
     circle_without_bg,
@@ -25,13 +25,13 @@ from PrimeMega.ex_plugins.ImageEditor.edit_2 import (  # pylint:disable=import-e
     sepia_mode,
     sticker,
 )
-from PrimeMega.ex_plugins.ImageEditor.edit_3 import (  # pylint:disable=import-error
+from FallenRobot.ex_plugins.ImageEditor.edit_3 import (  # pylint:disable=import-error
     black_border,
     blue_border,
     green_border,
     red_border,
 )
-from PrimeMega.ex_plugins.ImageEditor.edit_4 import (  # pylint:disable=import-error
+from FallenRobot.ex_plugins.ImageEditor.edit_4 import (  # pylint:disable=import-error
     inverted,
     removebg_plain,
     removebg_sticker,
@@ -41,7 +41,7 @@ from PrimeMega.ex_plugins.ImageEditor.edit_4 import (  # pylint:disable=import-e
     rotate_270,
     round_sticker,
 )
-from PrimeMega.ex_plugins.ImageEditor.edit_5 import (  # pylint:disable=import-error
+from FallenRobot.ex_plugins.ImageEditor.edit_5 import (  # pylint:disable=import-error
     normalglitch_1,
     normalglitch_2,
     normalglitch_3,
@@ -53,7 +53,7 @@ from PrimeMega.ex_plugins.ImageEditor.edit_5 import (  # pylint:disable=import-e
     scanlineglitch_4,
     scanlineglitch_5,
 )
-from PrimeMega import pbot
+from FallenRobot import pbot
 
 lel = 00000000
 # pylint:disable=import-error
