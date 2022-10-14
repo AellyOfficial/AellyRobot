@@ -8,7 +8,7 @@ import numpy as np
 import requests
 from PIL import Image, ImageDraw, ImageOps
 
-from KuramaRobot import REM_BG_API_KEY
+from FallenRobot import REM_BG_API_KEY
 
 async def rotate_90(client, message):
     try:
