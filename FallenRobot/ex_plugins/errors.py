@@ -2,7 +2,7 @@ import sys
 import traceback
 from functools import wraps
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
-from PrimeMega import EVENT_LOGS, pbot as app
+from FallenRobot import EVENT_LOGS, pbot as app
 
 
 def split_limits(text):
