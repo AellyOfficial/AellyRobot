@@ -57,7 +57,7 @@ from FallenRobot.utils.resources.ImageEditor.edit_5 import (  # pylint:disable=i
     scanlineglitch_4,
     scanlineglitch_5,
 )
-from FallenRobot import pgram
+from FallenRobot import pbot
 
 lel = 00000000
 # pylint:disable=import-error
