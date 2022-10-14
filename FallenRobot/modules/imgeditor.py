@@ -1,3 +1,5 @@
+
+
 from pyrogram import filters
 from pyrogram.types import (
     CallbackQuery,
@@ -6,8 +8,10 @@ from pyrogram.types import (
     Message,
 )
 
+from FallenRobot import BOT_NAME
+
 # By @TroJanzHEX
-from FallenRobot.ex_plugins.ImageEditor.edit_1 import (  # pylint:disable=import-error
+from FallenRobot.utils.resources.ImageEditor.edit_1 import (  # pylint:disable=import-error
     black_white,
     box_blur,
     bright,
@@ -15,7 +19,7 @@ from FallenRobot.ex_plugins.ImageEditor.edit_1 import (  # pylint:disable=import
     mix,
     normal_blur,
 )
-from FallenRobot.ex_plugins.ImageEditor.edit_2 import (  # pylint:disable=import-error
+from FallenRobot.utils.resources.ImageEditor.edit_2 import (  # pylint:disable=import-error
     cartoon,
     circle_with_bg,
     circle_without_bg,
@@ -25,13 +29,13 @@ from FallenRobot.ex_plugins.ImageEditor.edit_2 import (  # pylint:disable=import
     sepia_mode,
     sticker,
 )
-from FallenRobot.ex_plugins.ImageEditor.edit_3 import (  # pylint:disable=import-error
+from FallenRobot.utils.resources.ImageEditor.edit_3 import (  # pylint:disable=import-error
     black_border,
     blue_border,
     green_border,
     red_border,
 )
-from FallenRobot.ex_plugins.ImageEditor.edit_4 import (  # pylint:disable=import-error
+from FallenRobot.utils.resources.ImageEditor.edit_4 import (  # pylint:disable=import-error
     inverted,
     removebg_plain,
     removebg_sticker,
@@ -41,7 +45,7 @@ from FallenRobot.ex_plugins.ImageEditor.edit_4 import (  # pylint:disable=import
     rotate_270,
     round_sticker,
 )
-from FallenRobot.ex_plugins.ImageEditor.edit_5 import (  # pylint:disable=import-error
+from FallenRobot.utils.resources.ImageEditor.edit_5 import (  # pylint:disable=import-error
     normalglitch_1,
     normalglitch_2,
     normalglitch_3,
@@ -53,12 +57,12 @@ from FallenRobot.ex_plugins.ImageEditor.edit_5 import (  # pylint:disable=import
     scanlineglitch_4,
     scanlineglitch_5,
 )
-from FallenRobot import pbot
+from FallenRobot import pgram
 
 lel = 00000000
 # pylint:disable=import-error
-@pbot.on_message(filters.command(["edit", "editor"]))
-async def photo(client: pbot, message: Message):
+@pgram.on_message(filters.command(["edit", "editor"]))
+async def photo(client: pgram, message: Message):
     try:
         if not message.reply_to_message.photo:
             await client.send_message(message.chat.id, "Reply to an image man!ㅤㅤ")
@@ -116,15 +120,14 @@ async def photo(client: pbot, message: Message):
         print("photomarkup error - " + str(e))
         if "USER_IS_BLOCKED" in str(e):
             return
-        else:
-            try:
-                await message.reply_text("Something went wrong!", quote=True)
-            except Exception:
-                return
+        try:
+            await message.reply_text("Something went wrong!", quote=True)
+        except Exception:
+            return
 
 
-@pbot.on_callback_query()
-async def cb_handler(client: pbot, query: CallbackQuery):
+@pgram.on_callback_query()
+async def cb_handler(client: pgram, query: CallbackQuery):
     user_id = query.from_user.id
     if lel == user_id:
         if query.data == "removebg":
@@ -447,5 +450,10 @@ async def cb_handler(client: pbot, query: CallbackQuery):
             await removebg_sticker(client, query.message)
 
 
-__mod_name__ = "Img Editor​"
-Footer
+__mod_name__ = "Image Editor"
+__help__ = f"""
+{BOT_NAME} have some advanced image editing tools inbuilt
+Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more
+  ➢ `/edit [reply to image]`*:* Open the image editor
+  ➢ `/rmbg [REPLY]`*:* Revove BG of replied image/sticker.
+"""
