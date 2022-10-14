@@ -1,5 +1,5 @@
 from envparse import env
-from PrimeMega import LOGGER
+from FallenRobot import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
