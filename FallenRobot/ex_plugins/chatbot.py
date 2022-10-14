@@ -1,4 +1,4 @@
-from PrimeMega.mongo import client as db_x
+from FallenRobot.mongo import client as db_x
 
 lydia = db_x["CHATBOT"]
 
