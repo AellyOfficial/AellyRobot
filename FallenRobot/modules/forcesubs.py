@@ -34,10 +34,10 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from Exon import BOT_USERNAME as asau
-from Exon import DRAGONS as SUDO_USERS
-from Exon import pgram as pbot
-from Exon.modules.sql import forceSubscribe_sql as sql
+from FallenRobot import BOT_USERNAME as asau
+from FallenRobot import DRAGONS as SUDO_USERS
+from FallenRobot import pgram as pbot
+from FallenRobot.modules.sql import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
