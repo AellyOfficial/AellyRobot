@@ -36,7 +36,7 @@ from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboard
 
 from FallenRobot import BOT_USERNAME as asau
 from FallenRobot import DRAGONS as SUDO_USERS
-from FallenRobot import pgram as pbot
+from FallenRobot import pbot
 from FallenRobot.modules.sql import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
