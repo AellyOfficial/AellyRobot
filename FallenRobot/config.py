@@ -19,7 +19,7 @@ class Config(object):
     JOIN_LOGGER = (-1001576935752)
     EVENT_LOGS = (-1001576935752)
 
-    SQLALCHEMY_DATABASE_URI = ""
+    SQLALCHEMY_DATABASE_URI = "postgres://dllvhfnhluoqvs:2ffdfe571c122e4866c1519274c223c9c5a4c901f117f0634a7ca628f3fca0b9@ec2-3-227-146-146.compute-1.amazonaws.com:5432/d1gc4h0m9nc7l4"
     MONGO_DB_URI = ""
     LOAD = []
     NO_LOAD = ["rss"]
