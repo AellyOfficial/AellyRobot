@@ -10,11 +10,11 @@ def get_user_list(config, key):
 class Config(object):
     LOGGER = True
 
-    API_ID = ""
-    API_HASH = ""
-    TOKEN = ""
-    OWNER_ID = ""
-    OWNER_USERNAME = ""
+    API_ID = "7440891"
+    API_HASH = "18218ed0b82c5d35114982e85e6f8950"
+    TOKEN = "5271178420:AAHeIbRCHJRtFelp5VJeb3A89mcvp1qpFvc"
+    OWNER_ID = "5233742848"
+    OWNER_USERNAME = "@an_unic_or_n47"
     SUPPORT_CHAT = ""
     JOIN_LOGGER = ()
     EVENT_LOGS = ()
