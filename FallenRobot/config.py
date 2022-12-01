@@ -50,12 +50,12 @@ class Config(object):
         "CAACAgUAAxkBAAEDafNhq5Z0DegqVzauwSighMw5cPWp8QACVgQAAuUG0FRXfCEuBziNzCIE"
     )
     ALLOW_EXCL = True
-    CASH_API_KEY = ""
-    TIME_API_KEY = ""
+    CASH_API_KEY = "GUHZKUCUR2HQL1YG"
+    TIME_API_KEY = "DD6YGKX1SRC8"
     BL_CHATS = []
     SPAMMERS = None
     ALLOW_CHATS = True
-    START_IMG = ""
+    START_IMG = "https://te.legra.ph/file/93d0b55f321f1f42e373e.png"
     HEROKU_API_KEY = None
     HEROKU_APP_NAME = None
     TEMP_DOWNLOAD_DIRECTORY = "./"
